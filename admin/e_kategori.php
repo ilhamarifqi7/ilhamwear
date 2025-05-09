@@ -113,7 +113,7 @@ if (isset($_POST['simpan'])) {
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
           <span>Beranda</span>
         </a>
@@ -172,7 +172,7 @@ if (isset($_POST['simpan'])) {
       <h1>Kategori Produk</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="index.php">Beranda</a></li>
           <li class="breadcrumb-item">Kategori produk</li>
           <li class="breadcrumb-item active">Tambah</li>
         </ol>
@@ -216,7 +216,7 @@ if (isset($_POST['simpan'])) {
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://instagram.com/ilhamilham_26/">ilhamarifqi</a>
+      Designed by <a href="https://instagram.com/ilhamilham_26/" target="_blank">ilhamarifqi</a>
     </div>
   </footer><!-- End Footer -->
 

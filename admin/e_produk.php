@@ -9,7 +9,7 @@ if (!isset($_SESSION["login"])) {
 }
 
 // Cek apakah status tersedia dan pastikan user adalah admin
-if (!isset($_SESSION["status"]) || $_SESSION["status"] !== "admin") {
+if (!isset($_SESSION["sts"]) || $_SESSION["sts"] !== "admin") {
     echo "<script>
     alert('Akses ditolak! Halaman ini hanya untuk Admin.');
     window.location.href='login.php';
@@ -31,8 +31,8 @@ if (isset($_POST['update'])) {
     $nm_produk = $_POST['nm_produk'];
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
-    $desk = $_POST['desk'];
-    $id_kategori = $_POST['id_kategori'];
+    $ket = $_POST['ket'];
+    $id_ktg = $_POST['id_ktg'];
     $gambar_lama = $_POST['gambar_lama'];
 
     // Cek apakah ada gambar baru yang diupload
@@ -60,7 +60,7 @@ if (isset($_POST['update'])) {
     }
 
     // Update data ke database
-    $query = mysqli_query($koneksi, "UPDATE tb_produk SET nm_produk='$nm_produk', harga='$harga', stok='$stok', desk='$desk', id_kategori='$id_kategori', gambar='$imgnewfile' WHERE id_produk='$id_produk'");
+    $query = mysqli_query($koneksi, "UPDATE tb_produk SET nm_produk='$nm_produk', harga='$harga', stok='$stok', ket='$ket', id_ktg='$id_ktg', gambar='$imgnewfile' WHERE id_produk='$id_produk'");
 
     if ($query) {
         echo "<script>alert('Produk berhasil diperbarui!');</script>";
@@ -234,18 +234,18 @@ if (isset($_POST['update'])) {
                                     <input type="number" class="form-control" id="stok" name="stok" value="<?php echo $data['stok']; ?>" required>
                                 </div>
                                 <div class="col-12">
-                                    <label for="desk" class="form-label">Deskripsi</label>
-                                    <textarea class="form-control" id="desk" name="desk" required><?php echo $data['desk']; ?></textarea>
+                                    <label for="ket" class="form-label">Deskripsi</label>
+                                    <textarea class="form-control" id="ket" name="ket" required><?php echo $data['ket']; ?></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <label for="id_kategori" class="form-label">Kategori</label>
-                                    <select class="form-control" id="id_kategori" name="id_kategori" required>
+                                    <label for="id_ktg" class="form-label">Kategori</label>
+                                    <select class="form-control" id="id_ktg" name="id_ktg" required>
                                         <option value="">-- Pilih Kategori --</option>
                                         <?php
-                                        $query_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kategori");
-                                        while ($kategori = mysqli_fetch_array($query_kategori)) {
-                                            $selected = ($kategori['id_kategori'] == $data['id_kategori']) ? 'selected' : '';
-                                            echo "<option value='{$kategori['id_kategori']}' $selected>{$kategori['nm_kategori']}</option>";
+                                        $query = mysqli_query($koneksi, "SELECT * FROM tb_ktg");
+                                        while ($kategori = mysqli_fetch_array($query)) {
+                                            $selected = ($kategori['id_ktg'] == $data['id_ktg']) ? 'selected' : '';
+                                            echo "<option value='{$kategori['id_ktg']}' $selected>{$kategori['nm_ktg']}</option>";
                                         }
                                         ?>
                                     </select>

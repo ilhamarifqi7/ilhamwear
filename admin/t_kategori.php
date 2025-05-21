@@ -8,7 +8,7 @@ if (isset($_POST['simpan'])){
     $urutan++;
     $huruf = "k";
     $id_kategori =$huruf . sprintf("%03s", $urutan);
-    $nm_kategori = $_POST['nm_kategori'];
+    $nm_kategori = $_POST['nm_ktg'];
 
     $query = mysqli_query($koneksi, "INSERT INTO tb_ktg(id_ktg, nm_ktg) VALUES ('$id_kategori', '$nm_kategori')");
     if ($query) {
@@ -179,7 +179,7 @@ if (isset($_POST['simpan'])){
     </div><!-- End Page Title -->
     <section class="section">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
 
           <div class="card">
             <div class="card-body">

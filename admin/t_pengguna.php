@@ -2,21 +2,6 @@
 session_start();
 include "koneksi.php";
 
-// Cek apakah sudah login
-if (!isset($_SESSION["login"])) {
-    header("Location: login.php");
-    exit;
-}
-
-// Cek apakah status tersedia dan pastikan user adalah admin
-if (!isset($_SESSION["status"]) || $_SESSION["status"] !== "admin") {
-    echo "<script>
-    alert('Akses ditolak! Halaman ini hanya untuk Admin.');
-    window.location.href='login.php';
-  </script>";
-    exit;
-}
-
 if (isset($_POST['simpan'])) {
     // Ambil ID terakhir dari tb_user
     $auto = mysqli_query($koneksi, "SELECT MAX(id_user) AS max_code FROM tb_user");
@@ -32,11 +17,11 @@ if (isset($_POST['simpan'])) {
     // Ambil input dari form
     $username = $_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hash password
-    $status = $_POST['status'];
+    $sts = $_POST['sts'];
 
     // Query untuk insert data ke tb_user
-    $query = mysqli_query($koneksi, "INSERT INTO tb_user (id_user, username, password, status) 
-                                     VALUES ('$id_user', '$username', '$password', '$status')");
+    $query = mysqli_query($koneksi, "INSERT INTO tb_user (id_user, username, password, sts) 
+                                     VALUES ('$id_user', '$username', '$password', '$sts')");
 
     // Notifikasi
     if ($query) {
@@ -213,8 +198,8 @@ if (isset($_POST['simpan'])) {
 
                                 <!-- Status -->
                                 <div class="col-12">
-                                    <label for="status" class="form-label">Status</label>
-                                    <select class="form-select" id="status" name="status" required>
+                                    <label for="sts" class="form-label">Status</label>
+                                    <select class="form-select" id="sts" name="sts" required>
                                         <option value="">Pilih Status</option>
                                         <option value="admin">Admin</option>
                                         <option value="customer">Customer</option>

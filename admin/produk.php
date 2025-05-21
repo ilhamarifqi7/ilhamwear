@@ -42,11 +42,9 @@
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
-
-        <div class="search-bar">
-            <form class="search-form d-flex align-items-center" method="POST" action="#">
-                <input type="text" name="query" placeholder="Search" title="Enter search keyword"value="<?php echo isset($_GET
-                ['query']) ? htmlspecialchars($_GET['query']) : ''; ?>">
+           <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword"value="<?php echo isset($_GET['query']) ? htmlspecialchars($_GET['query']) : ''; ?>"/>
                 <button type="submit" title="Search"><i class="bi bi-search"></i></button>
             </form>
         </div><!-- End Search Bar -->
@@ -192,14 +190,17 @@
                                         <th scope="col">Nama Produk</th>
                                         <th scope="col">Harga</th>
                                         <th scope="col">Stok</th>
+                                        <th scope="col">Keterangan</th>
                                         <th scope="col">Nama Kategori</th>
                                         <th scope="col">Gambar</th>
+                                        <th scope="col">Size</th>
                                         <th scope="col">Aksi</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    include"koneksi.php";
+                                    include "koneksi.php";
                                     $no = 1;
 
                                     // Ambil keyword pencarian dari GET
@@ -209,7 +210,7 @@
                                     $sql_query = "SELECT tb_produk.*, tb_ktg.nm_ktg FROM tb_produk LEFT JOIN tb_ktg ON tb_produk.id_ktg = tb_ktg.id_ktg";
 
                                     if (!empty($query)) {
-                                    $sql_query .="WHERE tb_produk.nm_produk LIKE '%$query%' OR tb_kategori.nm_ktg LIKE '%query%' OR tb_produk.ket LIKE '%$query%'";
+                                    $sql_query .="WHERE tb_produk.nm_produk LIKE '%$query%' OR tb_ktg.nm_ktg LIKE '%$query%' OR tb_produk.ket LIKE '%$query%'";
                                     }
 
                                     $sql = mysqli_query($koneksi, $sql_query);
@@ -217,7 +218,7 @@
                                     if (mysqli_num_rows($sql) > 0) {
                                         while ($hasil= mysqli_fetch_array($sql)) {
                                     ?>
-                                            <tr>
+                                        <tr>
                                                 <td><?php echo $no++; ?></td>
                                                 <td><?php echo $hasil['nm_produk']; ?></td>
                                                 <td>Rp <?php echo number_format($hasil['harga'], 0, ',', '.'); ?></td>
@@ -231,16 +232,18 @@
                                                      tidak ada gambar
                                                      <?php } ?>
                                                      </td>
-                                                     <td><?php echo $hasil['size']; ?></td>
-                                                     <td>
-                                                        <a href="e_produk.php?id=<?php echo $hasil['id_produk']; ?>" class="btn btn warning">
-                                                            <i class="bi bi-penci-square"></i>
-                                                        <a>
-                                                        <a href="h_produk.php?id=<?php echo $hasil['id_produk']; ?>" class="btn btn-danger" onclik="return confirm('Apakah Menghapus Data?')">
-                                                            <i class="bi bi-trash"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                <td><?php echo $hasil['size']; ?></td>
+                                                <td>
+                                                    
+                                                    <a href="e_produk.php?id=<?php echo $hasil['id_produk']; ?>" class="btn btn-warning">
+                                                        <i class="bi bi-pencil-square"></i>
+                                                    </a>
+                                                    <a href="h_produk.php?id=<?php echo $hasil['id_produk']; ?>" class="btn btn-danger" onclik="return confirm('Apakah Menghapus Data?')">
+                                                        <i class="bi bi-trash"></i>
+                                                    </a>
+                                                </td>
+                                                
+                                        </tr>
                                             <?php
                                         }
                                         } else {

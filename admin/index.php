@@ -1,3 +1,22 @@
+<?php
+session_start();
+include "koneksi.php";
+
+//Cek apakah sudah login
+if (!isset($_SESSION["login"])) {
+  header("Location: login.php");
+  exit;
+}
+
+// Cek apakah status tersedia dan pastikan user adalah admin
+if (!isset($_SESSION["sts"]) || $_SESSION["sts"] !== "admin") {
+    echo "<script>
+    alert('Akses ditolak! Halaman ini hanya untuk Admin.');
+    window.location.href='login.php';
+  </script>";
+exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

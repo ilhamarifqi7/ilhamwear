@@ -1,23 +1,3 @@
-<?php
-session_start();
-include "koneksi.php";
-
-// Cek apakah sudah login
-if (!isset($_SESSION["login"])) {
-    header("Location: login.php");
-    exit;
-}
-
-// Cek apakah status tersedia dan pastikan user adalah admin
-if (!isset($_SESSION["status"]) || $_SESSION["status"] !== "admin") {
-    echo "<script>
-    alert('Akses ditolak! Halaman ini hanya untuk Admin.');
-    window.location.href='login.php';
-  </script>";
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -216,7 +196,7 @@ if (!isset($_SESSION["status"]) || $_SESSION["status"] !== "admin") {
                                     $query = isset($_POST['query']) ? mysqli_real_escape_string($koneksi, $_POST['query']) : '';
 
                                     // Query dasar
-                                    $sql_query = "SELECT id_user, username, status FROM tb_user";
+                                    $sql_query = "SELECT id_user, username, sts FROM tb_user";
 
                                     // Tambahkan pencarian jika input tidak kosong
                                     if (!empty($query)) {
@@ -231,7 +211,7 @@ if (!isset($_SESSION["status"]) || $_SESSION["status"] !== "admin") {
                                             <tr>
                                                 <td><?php echo $no++; ?></td>
                                                 <td><?php echo $hasil['username']; ?></td>
-                                                <td><?php echo $hasil['status']; ?></td>
+                                                <td><?php echo $hasil['sts']; ?></td>
                                                 <td>
                                                     <a href="h_pengguna.php?id=<?php echo $hasil['id_user']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data?')">
                                                         <i class="bi bi-trash"></i>
@@ -265,10 +245,10 @@ if (!isset($_SESSION["status"]) || $_SESSION["status"] !== "admin") {
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>Furnimart</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Ilhamwear</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            Designed by <a href="https://instagram.com/dea.salsa.503/" target="_blank">Dea Salsabilla</a>
+           Designed by <a href="https://instagram.com/ilhamilham_26/" target="_blank">ilham arifqi</a>
         </div>
     </footer><!-- End Footer -->
 

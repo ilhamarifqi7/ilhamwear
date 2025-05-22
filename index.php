@@ -3,7 +3,17 @@
 
 
 <!-- molla/index-5.html  22 Nov 2019 09:55:58 GMT -->
+
 <head>
+    <script type="text/javascript">
+        if (top !== window) {
+            top.location.href = window.location.href;
+        }
+        if (window.location.hash) {
+            window.location.href = window.location.href.replace(window.location.hash, '');
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -430,7 +440,7 @@
                                 </div><!-- End .header-search-wrapper -->
                             </form>
                         </div><!-- End .header-search -->
-                        
+
                         <a href="wishlist.html" class="wishlist-link">
                             <i class="icon-heart-o"></i>
                         </a>
@@ -526,7 +536,7 @@
                 <span class="slider-loader text-white"></span><!-- End .slider-loader -->
             </div><!-- End .intro-slider-container -->
 
-            <div class="brands-border owl-carousel owl-simple mb-5" data-toggle="owl" 
+            <div class="brands-border owl-carousel owl-simple mb-5" data-toggle="owl"
                 data-owl-options='{
                     "nav": false, 
                     "dots": false,
@@ -652,7 +662,7 @@
 
                 <div class="tab-content tab-content-carousel">
                     <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
-                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
                             data-owl-options='{
                                 "nav": false, 
                                 "dots": true,
@@ -824,7 +834,7 @@
                         </div><!-- End .owl-carousel -->
                     </div><!-- .End .tab-pane -->
                     <div class="tab-pane p-0 fade" id="trendy-women-tab" role="tabpanel" aria-labelledby="trendy-women-link">
-                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
                             data-owl-options='{
                                 "nav": false, 
                                 "dots": true,
@@ -852,7 +862,7 @@
                         </div><!-- End .owl-carousel -->
                     </div><!-- .End .tab-pane -->
                     <div class="tab-pane p-0 fade" id="trendy-men-tab" role="tabpanel" aria-labelledby="trendy-men-link">
-                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
                             data-owl-options='{
                                 "nav": false, 
                                 "dots": true,
@@ -880,7 +890,7 @@
                         </div><!-- End .owl-carousel -->
                     </div><!-- .End .tab-pane -->
                     <div class="tab-pane p-0 fade" id="trendy-access-tab" role="tabpanel" aria-labelledby="trendy-access-link">
-                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
                             data-owl-options='{
                                 "nav": false, 
                                 "dots": true,
@@ -1523,7 +1533,7 @@
                     <a href="#" class="btn btn-outline-primary-2 btn-round btn-more">Load more</a>
                 </div><!-- End .more-container -->
             </div><!-- End .container -->
-                
+
             <div class="mb-2"></div><!-- End .mb-2 -->
 
             <div class="container">
@@ -1533,7 +1543,7 @@
                             <div class="cta-wrapper cta-text text-center">
                                 <h3 class="cta-title">Shop Social</h3><!-- End .cta-title -->
                                 <p class="cta-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p><!-- End .cta-desc -->
-                        
+
                                 <div class="social-icons social-icons-colored justify-content-center">
                                     <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                     <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
@@ -1548,7 +1558,7 @@
                             <div class="cta-wrapper text-center">
                                 <h3 class="cta-title">Get the Latest Deals</h3><!-- End .cta-title -->
                                 <p class="cta-desc">and <br>receive <span class="text-primary">$20 coupon</span> for first shopping</p><!-- End .cta-desc -->
-                        
+
                                 <form action="#">
                                     <div class="input-group">
                                         <input type="email" class="form-control" placeholder="Enter your Email Address" aria-label="Email Adress" required>
@@ -1689,7 +1699,7 @@
                                 </div><!-- End .icon-box-content -->
                             </div><!-- End .icon-box -->
                         </div><!-- End .col-sm-6 col-lg-4 -->
-                        
+
                         <div class="col-sm-6 col-lg-4">
                             <div class="icon-box icon-box-side">
                                 <span class="icon-box-icon text-dark">
@@ -1728,7 +1738,7 @@
                             <div class="widget widget-about">
                                 <img src="assets/images/demos/demo-5/logo-footer.png" class="footer-logo" alt="Footer Logo" width="105" height="25">
                                 <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. </p>
-                                
+
                                 <div class="widget-about-info">
                                     <div class="row">
                                         <div class="col-sm-6 col-md-4">
@@ -1825,7 +1835,7 @@
                 <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search in..." required>
                 <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
             </form>
-            
+
             <nav class="mobile-nav">
                 <ul class="mobile-menu">
                     <li class="active">
@@ -2025,7 +2035,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/jquery.plugin.min.js"></script>
     <script src="assets/js/jquery.countdown.min.js"></script>
-    
+
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/demos/demo-5.js"></script>
@@ -2033,4 +2043,5 @@
 
 
 <!-- molla/index-5.html  22 Nov 2019 09:56:18 GMT -->
+
 </html>

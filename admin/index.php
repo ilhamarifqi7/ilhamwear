@@ -176,7 +176,7 @@ exit;
       <div class="row">
 
         <!-- Left side columns -->
-        <div class="col-lg-8">
+        <div class="col-lg-16">
           <div class="row">
 
             <!-- Customers Card -->

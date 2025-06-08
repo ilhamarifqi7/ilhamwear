@@ -76,7 +76,7 @@
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>ilham arifqi</h6>
+                            <h6>ilham</h6>
                             <span>admin</span>
                         </li>
                         <li>

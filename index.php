@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Molla - Bootstrap eCommerce Template</title>
+    <title>Ilhamwear - index</title>
     <meta name="keywords" content="HTML5 Template">
     <meta name="description" content="Molla - Bootstrap eCommerce Template">
     <meta name="author" content="p-themes">
@@ -512,6 +512,153 @@
         </header><!-- End .header -->
 
         <main class="main">
+            <div class="container">
+    <?php
+    include 'admin/koneksi.php';
+
+    // Ambil daftar kategori
+    $kategoriQuery = "SELECT DISTINCT k.id_ktg, k.nm_ktg
+                    FROM tb_produk p
+                    JOIN tb_ktg k ON p.id_ktg = k.id_ktg";
+    $kategoriResult = mysqli_query($koneksi, $kategoriQuery);
+    ?>
+
+    <div class="heading heading-center mb-3">
+        <h2 class="title">Produk Tren</h2>
+    <ul class="nav nav-pills justify-content-center role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab" role="tab" aria-controls="trendy-all-tab"></a>
+        </li>
+
+        <?php while ($ktg = mysqli_fetch_assoc($kategoriResult)) : ?>
+            <li class="nav-item">
+                <a class="nav-link" id="trendy-ktg-<?php echo $ktg['id_ktg']; ?>-link" data-toggle="tab" 
+                    href="#trendy-ktg-<?=$ktg['id_ktg']; ?>-tab" role="tab" 
+                    aria-controls="trendy-ktg<?= $ktg['id_ktg']; ?>-tab"
+                    aria-selected="false">
+                <?= htmlspecialchars($ktg['nm_ktg']); ?>
+            </a>
+        </li>
+        <?php endwhile; ?>
+    </ul>
+</div>
+
+<div class="tab-content tab-content-carousel">
+    <!-- Tab: All -->
+    <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
+        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
+        data-owl-options='{
+            "nav": false,
+            "dots": true,
+            "margin": 20,
+            "loop": false,
+            "responsive": {
+                "0": { "items": 2 },
+                "480": { "items": 2 },
+                "768": { "items": 3 },
+                "992": { "items": 4 },
+                "1200": { "items": 4, "nav": true }
+            }
+        }'>
+                    <?php
+                    $allProduk = mysqli_query($koneksi, "
+                    SELECT p.*, k.nm_ktg 
+                    FROM tb_produk p 
+                    JOIN tb_ktg k ON p.id_ktg = k.id_ktg
+        ");
+                        while ($p = mysqli_fetch_assoc($allProduk)) :
+                    ?>
+                        <div class="product product-2">
+                            <figure class="product-media">
+                                <a href="#">
+                                    <img src="admin/produk_img/<?php echo $p['gambar']; ?>" alt="<?php echo htmlspecialchars($p['nm_produk']); ?>"
+                                        class="product-image">
+                                </a>
+                                
+                                <div class="product-action product-action-transparent">
+                                <a href="detail_produk.php?id_produk=<?= $p['id_produk']; ?>" class="btn-product btn-cart"><span>keranjang</span></a>
+                                </div>
+                                </figure>
+
+                                <div class="product-body">
+                                    <div class="product-cat">
+                                        <a href="belanja.php?id_ktg=<?- $p['id_ktg']; ?>">
+                                            <?= htmlspecialchars($p['nm_ktg']); ?>
+                                        </a>
+                                    </div>
+                                <h3 class="product-title"><a href="belanja.php"><?= htmlspecialchars($p['nm_produk']); ?></a></h3>
+                                <div class="product-price">Rp. <?= number_format($p['harga'], 0, ',', '.'); ?></div>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+        
+    </div> <!-- End .tab-content -->
+</div> <!-- End .container -->
+
+            <!-- Tab; per Kategori -->
+            <?php
+            // Ambil ulang kategori karena sudah habis dibaca di atas
+            $kategoriResult2 = mysqli_query($koneksi, $kategoriQuery);
+            while ($ktg = mysqli_fetch_assoc($kategoriResult2)) :
+                $id_ktg = $ktg['id_ktg'];
+            ?>
+            <div class="tab-pane p-0 fade" id="trendy-ktg-<?= $id_ktg; ?>-tab" role="tabpanel" aria-labelledby="trendy-ktg-<?=$id_ktg; ?>-link">
+                <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
+                    data-owl-options='{
+                        "nav": false,
+                        "dots": true,
+                        "margin": 20,
+                        "loop": false,
+                        "responsive": {
+                            "0": {"items": 2},
+                            "480": {"items": 2},
+                            "768": {"items": 3},
+                            "992": {"items": 4},
+                            "1200": {"items": 4, "nav": true}
+                        }
+                    }'>
+                                
+                                    <?php
+                                    $produkKtg = mysqli_query($koneksi, "
+    SELECT p.*, k.nm_ktg
+    FROM tb_produk p
+    JOIN tb_ktg k ON p.id_ktg = k.id_ktg
+    WHERE p.id_ktg = '$id_ktg'
+");
+
+                                    while ($p = mysqli_fetch_assoc($produkKtg)):
+                                    ?>
+                                    <div class="product product-2">
+                                        <figure class="product-media">
+                                            <a href="#">
+                                                <img src="admin/produk_img/<?= $p['gambar']; ?>" alt="<?= htmlspecialchars($p['nm_produk']); ?>" 
+                                                class="product-image">
+                                            </a>
+                                        </figure>
+                                        <div class="product-action product-action-transparent">
+                                            <a href="detail_produk.php?id=<?= $p['id_produk']; ?>" class="btn-product btn-cart"><span>Keranjang</span></a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="belanja.php?id_ktg=<?= $p['$id_ktg']; ?>">
+                                                <?php htmlspecialchars($p['$nm_ktg']); ?>
+                                            </a>
+                                        </div>
+                                        <h3 class="product-title"><a href="belanja.php"><?= htmlspecialchars($p['$nm_produk']); ?></a></h3>
+                                        <div class="product-price">Rp. <?=number_format($p['harga'], 0, ',', '.'); ?></div>
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                          </div>
+                    </div>
+                <?php endwhile; ?>
+            </div><!-- End .tab-content -->
+        </div><!-- End .container -->
+
             <div class="intro-slider-container mb-0">
                 <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl" data-owl-options='{"nav": false, "dots": false}'>
                     <div class="intro-slide" style="background-image: url(assets/images/demos/demo-5/slider/slide-1.jpg);">

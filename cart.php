@@ -299,26 +299,7 @@ session_start();
                                                 
                                             <footer class="footer">
 
-														</a>
-													</figure>
-
-													<h3 class="product-title">
-														<a href="#">Beige knitted elastic runner shoes</a>
-													</h3><!-- End .product-title -->
-												</div><!-- End .product -->
-											</td>
-											<td class="price-col">Rp.45.000</td>
-											<td class="quantity-col">
-                                                <div class="cart-product-quantity">
-                                                    <input type="number" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
-                                                </div><!-- End .cart-product-quantity -->
-                                            </td>
-											<td class="total-col">Rp.45.000</td>
-											<td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
-										</tr>
-										<tr>
-											<td class="product-col">
-												<!-- End .product -->
+												
 											</td>
 										</tr>
 									</tbody>
@@ -337,33 +318,9 @@ session_start();
 			            			</div><!-- End .cart-discount -->
 
 			            			
-		            			</div><!-- End .cart-bottom -->
-	                		</div><!-- End .col-lg-9 -->
-	                		<aside class="col-lg-3">
-	                			<div class="summary summary-cart">
-	                				<h3 class="summary-title">Total Keranjang</h3><!-- End .summary-title -->
+		            			
 
-	                				<table class="table table-summary">
-	                					<tbody>
-	                						<tr class="summary-subtotal">
-	                							<td>Subtotal:</td>
-	                							<td>Rp.45.000</td>
-
-                                                <table class="table table-summary">
-	                					<tbody>
-	                						<tr class="summary-subtotal">
-	                							<td>Diskon:</td>
-	                							<td>Rp.0</td>
-	                						
-
-	                						<tr class="summary-total">
-	                							<td>Total:</td>
-	                							<td>Rp.45.000</td>
-	                						</tr><!-- End .summary-total -->
-	                					</tbody>
-	                				</table><!-- End .table table-summary -->
-
-	                				<a href="checkout.html" class="btn btn-outline-primary-2 btn-order btn-block">PROCES CHEKOUT</a>
+	                				<a href="checkout.html" class="btn btn-outline-primary-btn-order btn-block"></a>
 	                			</div><!-- End .summary -->
 	                		</aside><!-- End .col-lg-3 -->
 	                	</div><!-- End .row -->

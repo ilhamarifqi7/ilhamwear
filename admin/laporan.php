@@ -134,7 +134,7 @@
       </li><!-- End transaksi Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="laporan">
+        <a class="nav-link collapsed" href="laporan.php">
         <i class="bi bi-pencil-square"></i>
           <span>laporan</span>
         </a>
@@ -162,17 +162,7 @@
             </nav>
         </div><!-- End Page Title -->
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="t_produk.php" class="btn btn-primary mt-3">
-                            <i class="bi bi-plus-lg"></i> Tambah Data
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 <?php
         include "koneksi.php";
 

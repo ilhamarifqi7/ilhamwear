@@ -18,9 +18,9 @@ function query($query)
 
 // Query dengan JOIN antara tb_produk dan tb_kategori
 $data = query("SELECT tb_produk.id_produk, tb_produk.nm_produk, tb_produk.harga, tb_produk.stok,
-                   tb_produk.desk, tb_produk.gambar, tb_kategori.nm_kategori
+                   tb_produk.ket, tb_produk.gambar, tb_ktg.nm_ktg
                 FROM tb_produk
-                JOIN tb_kategori ON tb_produk.id_kategori = tb_kategori.id_kategori");
+                JOIN tb_ktg ON tb_produk.id_ktg = tb_ktg.id_ktg");
 
 // Create an instance of the class:
 $mpdf = new \Mpdf\Mpdf();
@@ -88,8 +88,8 @@ $html = '</html>
             <td>'.$row["id_produk"] .'</td>
             <td><img src="produk_img/'. $row["gambar"] .'" alt="Gambar"></td>
             <td>'.$row["nm_produk"] .'</td>
-            <td>'.$row["nm_kategori"] .'</td>
-            <td>'.$row["desk"] .'</td>
+            <td>'.$row["nm_ktg"] .'</td>
+            <td>'.$row["ket"] .'</td>
             <td>'.$formatted_harga .'</td> <!-- Harga dengan format Rp 6.400.000 -->
             <td>'.$row["stok"] .'</td>
     </tr>

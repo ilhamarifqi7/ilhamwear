@@ -498,7 +498,7 @@ session_start();
 	            		<div class="col-sm-6 col-lg-3">
 	            			<div class="widget widget-about">
                                 <span style="font-size: 30px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Ilhamwear</span> 
-	            				<p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
+	            				<p>Terima kasih sudah belanja di Tooko Kami! 🙏 semoga barangnya sesuai dan memuaskan. Jangan lupa dicek ya, Kak. Sampai jumpa di order selanjutnya 😊</p>
 
 	            				<div class="social-icons">
 	            					 <a href="https://www.instagram.com/p/C6nojjlvDuZ/?igsh=MW04bmpjZ205dnd1eg==" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>

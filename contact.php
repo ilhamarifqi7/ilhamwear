@@ -179,7 +179,7 @@
             </nav><!-- End .breadcrumb-nav -->
             <div class="container">
 	        	<div class="page-header page-header-big text-center" style="background-image: url('assets/images/contact-header-bg.jpg')">
-        			<h1 class="page-title text-white">Contact us<span class="text-white">keep in touch with us</span></h1>
+        			<h1 class="page-title text-white">Hubungi Kami<span class="text-white">Tetaplah Terhubung Dengan Kami</span></h1>
 	        	</div><!-- End .page-header -->
             </div><!-- End .container -->
 
@@ -188,7 +188,7 @@
                 	<div class="row">
                 		<div class="col-lg-6 mb-2 mb-lg-0">
                 			<h2 class="title mb-1">informasi komtak</h2><!-- End .title mb-2 -->
-                			<p class="mb-3">Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+                			<p class="mb-3">Terima kasih telah mengunjungi toko kami. Untuk pemesanan, konsultasi ukuran, atau informasi detail produk, Anda dapat menghubungi kami melalui:</p>
                 			<div class="row">
                 				<div class="col-sm-7">
                 					<div class="contact-info">
@@ -231,7 +231,7 @@
                 		</div><!-- End .col-lg-6 -->
                 		<div class="col-lg-6">
                 			<h2 class="title mb-1">Punya pertanyaan?</h2><!-- End .title mb-2 -->
-                			<p class="mb-2">Use the form below to get in touch with the sales team</p>
+                			<p class="mb-2">Jika and punya pertanyaan bisa di jaukan melalui from di bawah ini</p>
 
                 			<form action="#" class="contact-form mb-3">
                 				<div class="row">
@@ -283,7 +283,7 @@
 	            		<div class="col-sm-6 col-lg-3">
 	            			<div class="widget widget-about">
 	            				 <a href="index.php" class="footer-logo">Ilhamwear</a>
-                                <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
+                                <p>Cek koleksi kami, pilih favoritmu, dan langsung order sekarang! Kami tunggu pesanan kamu 💌</p>
 
                                 <div class="social-icons">
                                         <a href="https://www.instagram.com/p/C6nojjlvDuZ/?igsh=MW04bmpjZ205dnd1eg==" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>

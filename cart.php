@@ -336,7 +336,7 @@ session_start();
 	            		<div class="col-sm-6 col-lg-3">
 	            			<div class="widget widget-about">
 	            				<span style="font-size: 30px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Ilhamwear</span> 
-	            				<p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
+	            				<p>🎉 Yay, produk sudah masuk ke keranjang! Checkout sekarang dan nikmati pengiriman cepat 🚚 Masih bingung? Klik tombol "proses checkout” untuk dibantu langsung 💬</p>
 
 	            				<div class="social-icons">
                                         <a href="https://www.instagram.com/p/C6nojjlvDuZ/?igsh=MW04bmpjZ205dnd1eg==" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
@@ -345,16 +345,13 @@ session_start();
 	            			</div><!-- End .widget about-widget -->
 	            		</div><!-- End .col-sm-6 col-lg-3 -->
 
-	            		<div class="col-sm-6 col-lg-3">
-	            			<div class="widget">
-	            				<h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
+	            		 <div class="col-sm-6 col-lg-4">
+                            <div class="widget">
+                                <h4 class="widget-title">Komitmen Kami</h4>
+                                <p>Kami berkomitmen untuk pengadaan yang etis dan keberlanjutan. Pelajari lebih lanjut tentang praktik keberlanjutan kami.</p>
+                                <a href="contact.php" class="btn btn-outline-secondary btn-sm">Pelajari Lebih Lanjut</a>
+                            
 
-	            				<ul class="widget-list">
-	            					<li><a href="about.html">About Molla</a></li>
-	            					<li><a href="#">How to shop on Molla</a></li>
-	            					<li><a href="#">FAQ</a></li>
-	            					<li><a href="contact.html">Contact us</a></li>
-	            					<li><a href="login.html">Log in</a></li>
 	            				</ul><!-- End .widget-list -->
 	            			</div><!-- End .widget -->
 	            		</div><!-- End .col-sm-6 col-lg-3 -->

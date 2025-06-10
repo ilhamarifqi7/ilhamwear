@@ -206,7 +206,7 @@ exit;
                       <i class="bi bi-basket"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>145</h6>
+                      <h6>0</h6>
 
                     </div>
                   </div>
@@ -279,4 +279,4 @@ exit;
 
 </body>
 
-</html>
+</html

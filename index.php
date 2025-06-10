@@ -518,7 +518,7 @@
 
     // Ambil daftar kategori
     $kategoriQuery = "SELECT DISTINCT k.id_ktg, k.nm_ktg
-                    FROM tb_produk p
+                    FROM tb_produk p    
                     JOIN tb_ktg k ON p.id_ktg = k.id_ktg";
     $kategoriResult = mysqli_query($koneksi, $kategoriQuery);
     ?>

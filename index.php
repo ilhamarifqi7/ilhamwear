@@ -55,378 +55,30 @@
                             <i class="icon-bars"></i>
                         </button>
 
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/demos/demo-5/logo.png" alt="Molla Logo" width="105" height="25">
+                       <a href="index.php" class="logo">
+                            <span style="font-size: 50px; font-weight: bold; font-family: Arial, sans-serif;">IlhamWear</span>
                         </a>
+                    </div><!-- End .header-left -->
 
-                        <nav class="main-nav">
-                            <ul class="menu sf-arrows">
-                                <li class="megamenu-container active">
-                                    <a href="index.html" class="sf-with-ul">Home</a>
+                    <nav class="main-nav" style="flex: 1; text-align: center;">
+                        <ul class="menu sf-arrows" style="display: inline-flex; gap: 30px; list-style: none; margin: 0; padding: 0;">
+                            <li><a href="index.php" class="sf-with-ul">Beranda</a></li>
+                            <li class="megamenu-container active"><a href="belanja.php" class="sf-with-ul">Belanja</a></li>
+                            <li><a href="contact.php" class="sf-with-ul">Hubungi Kami</a></li>
+                        </ul>
+                    </nav>
 
-                                    <div class="megamenu demo">
-                                        <div class="menu-col">
-                                            <div class="menu-title">Choose your demo</div><!-- End .menu-title -->
+                    <div class="header-right d-flex align-items-center">
+                        <div class="header-search">
+                            
+                            <form action="belanja.php" method="get">
+                                <div class="header-search-wrapper">
+                                    <label for="q" class="sr-only">Search</label>
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search produk..." required>
+                                </div>
+                            </form>
+                        </div>
 
-                                            <div class="demo-list">
-                                                <div class="demo-item">
-                                                    <a href="index-1.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/1.jpg);"></span>
-                                                        <span class="demo-title">01 - furniture store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-2.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/2.jpg);"></span>
-                                                        <span class="demo-title">02 - furniture store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-3.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/3.jpg);"></span>
-                                                        <span class="demo-title">03 - electronic store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-4.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/4.jpg);"></span>
-                                                        <span class="demo-title">04 - electronic store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-5.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/5.jpg);"></span>
-                                                        <span class="demo-title">05 - fashion store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-6.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/6.jpg);"></span>
-                                                        <span class="demo-title">06 - fashion store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-7.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/7.jpg);"></span>
-                                                        <span class="demo-title">07 - fashion store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-8.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/8.jpg);"></span>
-                                                        <span class="demo-title">08 - fashion store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-9.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/9.jpg);"></span>
-                                                        <span class="demo-title">09 - fashion store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item">
-                                                    <a href="index-10.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/10.jpg);"></span>
-                                                        <span class="demo-title">10 - shoes store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-11.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/11.jpg);"></span>
-                                                        <span class="demo-title">11 - furniture simple store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-12.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/12.jpg);"></span>
-                                                        <span class="demo-title">12 - fashion simple store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-13.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/13.jpg);"></span>
-                                                        <span class="demo-title">13 - market</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-14.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/14.jpg);"></span>
-                                                        <span class="demo-title">14 - market fullwidth</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-15.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/15.jpg);"></span>
-                                                        <span class="demo-title">15 - lookbook 1</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-16.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/16.jpg);"></span>
-                                                        <span class="demo-title">16 - lookbook 2</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-17.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/17.jpg);"></span>
-                                                        <span class="demo-title">17 - fashion store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-18.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/18.jpg);"></span>
-                                                        <span class="demo-title">18 - fashion store (with sidebar)</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-19.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/19.jpg);"></span>
-                                                        <span class="demo-title">19 - games store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-20.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/20.jpg);"></span>
-                                                        <span class="demo-title">20 - book store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-21.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/21.jpg);"></span>
-                                                        <span class="demo-title">21 - sport store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-22.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/22.jpg);"></span>
-                                                        <span class="demo-title">22 - tools store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-23.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/23.jpg);"></span>
-                                                        <span class="demo-title">23 - fashion left navigation store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                                <div class="demo-item hidden">
-                                                    <a href="index-24.html">
-                                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/24.jpg);"></span>
-                                                        <span class="demo-title">24 - extreme sport store</span>
-                                                    </a>
-                                                </div><!-- End .demo-item -->
-
-                                            </div><!-- End .demo-list -->
-
-                                            <div class="megamenu-action text-center">
-                                                <a href="#" class="btn btn-outline-primary-2 view-all-demos"><span>View All Demos</span><i class="icon-long-arrow-right"></i></a>
-                                            </div><!-- End .text-center -->
-                                        </div><!-- End .menu-col -->
-                                    </div><!-- End .megamenu -->
-                                </li>
-                                <li>
-                                    <a href="category.html" class="sf-with-ul">Shop</a>
-
-                                    <div class="megamenu megamenu-md">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-8">
-                                                <div class="menu-col">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="menu-title">Shop with sidebar</div><!-- End .menu-title -->
-                                                            <ul>
-                                                                <li><a href="category-list.html">Shop List</a></li>
-                                                                <li><a href="category-2cols.html">Shop Grid 2 Columns</a></li>
-                                                                <li><a href="category.html">Shop Grid 3 Columns</a></li>
-                                                                <li><a href="category-4cols.html">Shop Grid 4 Columns</a></li>
-                                                                <li><a href="category-market.html"><span>Shop Market<span class="tip tip-new">New</span></span></a></li>
-                                                            </ul>
-
-                                                            <div class="menu-title">Shop no sidebar</div><!-- End .menu-title -->
-                                                            <ul>
-                                                                <li><a href="category-boxed.html"><span>Shop Boxed No Sidebar<span class="tip tip-hot">Hot</span></span></a></li>
-                                                                <li><a href="category-fullwidth.html">Shop Fullwidth No Sidebar</a></li>
-                                                            </ul>
-                                                        </div><!-- End .col-md-6 -->
-
-                                                        <div class="col-md-6">
-                                                            <div class="menu-title">Product Category</div><!-- End .menu-title -->
-                                                            <ul>
-                                                                <li><a href="product-category-boxed.html">Product Category Boxed</a></li>
-                                                                <li><a href="product-category-fullwidth.html"><span>Product Category Fullwidth<span class="tip tip-new">New</span></span></a></li>
-                                                            </ul>
-                                                            <div class="menu-title">Shop Pages</div><!-- End .menu-title -->
-                                                            <ul>
-                                                                <li><a href="cart.html">Cart</a></li>
-                                                                <li><a href="checkout.html">Checkout</a></li>
-                                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                                <li><a href="dashboard.html">My Account</a></li>
-                                                                <li><a href="#">Lookbook</a></li>
-                                                            </ul>
-                                                        </div><!-- End .col-md-6 -->
-                                                    </div><!-- End .row -->
-                                                </div><!-- End .menu-col -->
-                                            </div><!-- End .col-md-8 -->
-
-                                            <div class="col-md-4">
-                                                <div class="banner banner-overlay">
-                                                    <a href="category.html" class="banner banner-menu">
-                                                        <img src="assets/images/menu/banner-1.jpg" alt="Banner">
-
-                                                        <div class="banner-content banner-content-top">
-                                                            <div class="banner-title text-white">Last <br>Chance<br><span><strong>Sale</strong></span></div><!-- End .banner-title -->
-                                                        </div><!-- End .banner-content -->
-                                                    </a>
-                                                </div><!-- End .banner banner-overlay -->
-                                            </div><!-- End .col-md-4 -->
-                                        </div><!-- End .row -->
-                                    </div><!-- End .megamenu megamenu-md -->
-                                </li>
-                                <li>
-                                    <a href="product.html" class="sf-with-ul">Product</a>
-
-                                    <div class="megamenu megamenu-sm">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-6">
-                                                <div class="menu-col">
-                                                    <div class="menu-title">Product Details</div><!-- End .menu-title -->
-                                                    <ul>
-                                                        <li><a href="product.html">Default</a></li>
-                                                        <li><a href="product-centered.html">Centered</a></li>
-                                                        <li><a href="product-extended.html"><span>Extended Info<span class="tip tip-new">New</span></span></a></li>
-                                                        <li><a href="product-gallery.html">Gallery</a></li>
-                                                        <li><a href="product-sticky.html">Sticky Info</a></li>
-                                                        <li><a href="product-sidebar.html">Boxed With Sidebar</a></li>
-                                                        <li><a href="product-fullwidth.html">Full Width</a></li>
-                                                        <li><a href="product-masonry.html">Masonry Sticky Info</a></li>
-                                                    </ul>
-                                                </div><!-- End .menu-col -->
-                                            </div><!-- End .col-md-6 -->
-
-                                            <div class="col-md-6">
-                                                <div class="banner banner-overlay">
-                                                    <a href="category.html">
-                                                        <img src="assets/images/menu/banner-2.jpg" alt="Banner">
-
-                                                        <div class="banner-content banner-content-bottom">
-                                                            <div class="banner-title text-white">New Trends<br><span><strong>spring 2019</strong></span></div><!-- End .banner-title -->
-                                                        </div><!-- End .banner-content -->
-                                                    </a>
-                                                </div><!-- End .banner -->
-                                            </div><!-- End .col-md-6 -->
-                                        </div><!-- End .row -->
-                                    </div><!-- End .megamenu megamenu-sm -->
-                                </li>
-                                <li>
-                                    <a href="#" class="sf-with-ul">Pages</a>
-
-                                    <ul>
-                                        <li>
-                                            <a href="about.html" class="sf-with-ul">About</a>
-
-                                            <ul>
-                                                <li><a href="about.html">About 01</a></li>
-                                                <li><a href="about-2.html">About 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html" class="sf-with-ul">Contact</a>
-
-                                            <ul>
-                                                <li><a href="contact.html">Contact 01</a></li>
-                                                <li><a href="contact-2.html">Contact 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="blog.html" class="sf-with-ul">Blog</a>
-
-                                    <ul>
-                                        <li><a href="blog.html">Classic</a></li>
-                                        <li><a href="blog-listing.html">Listing</a></li>
-                                        <li>
-                                            <a href="#">Grid</a>
-                                            <ul>
-                                                <li><a href="blog-grid-2cols.html">Grid 2 columns</a></li>
-                                                <li><a href="blog-grid-3cols.html">Grid 3 columns</a></li>
-                                                <li><a href="blog-grid-4cols.html">Grid 4 columns</a></li>
-                                                <li><a href="blog-grid-sidebar.html">Grid sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Masonry</a>
-                                            <ul>
-                                                <li><a href="blog-masonry-2cols.html">Masonry 2 columns</a></li>
-                                                <li><a href="blog-masonry-3cols.html">Masonry 3 columns</a></li>
-                                                <li><a href="blog-masonry-4cols.html">Masonry 4 columns</a></li>
-                                                <li><a href="blog-masonry-sidebar.html">Masonry sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Mask</a>
-                                            <ul>
-                                                <li><a href="blog-mask-grid.html">Blog mask grid</a></li>
-                                                <li><a href="blog-mask-masonry.html">Blog mask masonry</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Single Post</a>
-                                            <ul>
-                                                <li><a href="single.html">Default with sidebar</a></li>
-                                                <li><a href="single-fullwidth.html">Fullwidth no sidebar</a></li>
-                                                <li><a href="single-fullwidth-sidebar.html">Fullwidth with sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="elements-list.html" class="sf-with-ul">Elements</a>
-
-                                    <ul>
-                                        <li><a href="elements-products.html">Products</a></li>
-                                        <li><a href="elements-typography.html">Typography</a></li>
-                                        <li><a href="elements-titles.html">Titles</a></li>
-                                        <li><a href="elements-banners.html">Banners</a></li>
-                                        <li><a href="elements-product-category.html">Product Category</a></li>
-                                        <li><a href="elements-video-banners.html">Video Banners</a></li>
-                                        <li><a href="elements-buttons.html">Buttons</a></li>
-                                        <li><a href="elements-accordions.html">Accordions</a></li>
-                                        <li><a href="elements-tabs.html">Tabs</a></li>
-                                        <li><a href="elements-testimonials.html">Testimonials</a></li>
-                                        <li><a href="elements-blog-posts.html">Blog Posts</a></li>
-                                        <li><a href="elements-portfolio.html">Portfolio</a></li>
-                                        <li><a href="elements-cta.html">Call to Action</a></li>
-                                        <li><a href="elements-icon-boxes.html">Icon Boxes</a></li>
-                                    </ul>
-                                </li>
-                            </ul><!-- End .menu -->
-                        </nav><!-- End .main-nav -->
                     </div><!-- End .header-left -->
 
                     <div class="header-right">
@@ -513,151 +165,7 @@
 
         <main class="main">
             <div class="container">
-    <?php
-    include 'admin/koneksi.php';
-
-    // Ambil daftar kategori
-    $kategoriQuery = "SELECT DISTINCT k.id_ktg, k.nm_ktg
-                    FROM tb_produk p    
-                    JOIN tb_ktg k ON p.id_ktg = k.id_ktg";
-    $kategoriResult = mysqli_query($koneksi, $kategoriQuery);
-    ?>
-
-    <div class="heading heading-center mb-3">
-        <h2 class="title">Produk Tren</h2>
-    <ul class="nav nav-pills justify-content-center role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab" role="tab" aria-controls="trendy-all-tab"></a>
-        </li>
-
-        <?php while ($ktg = mysqli_fetch_assoc($kategoriResult)) : ?>
-            <li class="nav-item">
-                <a class="nav-link" id="trendy-ktg-<?php echo $ktg['id_ktg']; ?>-link" data-toggle="tab" 
-                    href="#trendy-ktg-<?=$ktg['id_ktg']; ?>-tab" role="tab" 
-                    aria-controls="trendy-ktg<?= $ktg['id_ktg']; ?>-tab"
-                    aria-selected="false">
-                <?= htmlspecialchars($ktg['nm_ktg']); ?>
-            </a>
-        </li>
-        <?php endwhile; ?>
-    </ul>
-</div>
-
-<div class="tab-content tab-content-carousel">
-    <!-- Tab: All -->
-    <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
-        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
-        data-owl-options='{
-            "nav": false,
-            "dots": true,
-            "margin": 20,
-            "loop": false,
-            "responsive": {
-                "0": { "items": 2 },
-                "480": { "items": 2 },
-                "768": { "items": 3 },
-                "992": { "items": 4 },
-                "1200": { "items": 4, "nav": true }
-            }
-        }'>
-                    <?php
-                    $allProduk = mysqli_query($koneksi, "
-                    SELECT p.*, k.nm_ktg 
-                    FROM tb_produk p 
-                    JOIN tb_ktg k ON p.id_ktg = k.id_ktg
-        ");
-                        while ($p = mysqli_fetch_assoc($allProduk)) :
-                    ?>
-                        <div class="product product-2">
-                            <figure class="product-media">
-                                <a href="#">
-                                    <img src="admin/produk_img/<?php echo $p['gambar']; ?>" alt="<?php echo htmlspecialchars($p['nm_produk']); ?>"
-                                        class="product-image">
-                                </a>
-                                
-                                <div class="product-action product-action-transparent">
-                                <a href="detail_produk.php?id_produk=<?= $p['id_produk']; ?>" class="btn-product btn-cart"><span>keranjang</span></a>
-                                </div>
-                                </figure>
-
-                                <div class="product-body">
-                                    <div class="product-cat">
-                                        <a href="belanja.php?id_ktg=<?- $p['id_ktg']; ?>">
-                                            <?= htmlspecialchars($p['nm_ktg']); ?>
-                                        </a>
-                                    </div>
-                                <h3 class="product-title"><a href="belanja.php"><?= htmlspecialchars($p['nm_produk']); ?></a></h3>
-                                <div class="product-price">Rp. <?= number_format($p['harga'], 0, ',', '.'); ?></div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                </div>
-            </div>
-        
-    </div> <!-- End .tab-content -->
-</div> <!-- End .container -->
-
-            <!-- Tab; per Kategori -->
-            <?php
-            // Ambil ulang kategori karena sudah habis dibaca di atas
-            $kategoriResult2 = mysqli_query($koneksi, $kategoriQuery);
-            while ($ktg = mysqli_fetch_assoc($kategoriResult2)) :
-                $id_ktg = $ktg['id_ktg'];
-            ?>
-            <div class="tab-pane p-0 fade" id="trendy-ktg-<?= $id_ktg; ?>-tab" role="tabpanel" aria-labelledby="trendy-ktg-<?=$id_ktg; ?>-link">
-                <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
-                    data-owl-options='{
-                        "nav": false,
-                        "dots": true,
-                        "margin": 20,
-                        "loop": false,
-                        "responsive": {
-                            "0": {"items": 2},
-                            "480": {"items": 2},
-                            "768": {"items": 3},
-                            "992": {"items": 4},
-                            "1200": {"items": 4, "nav": true}
-                        }
-                    }'>
-                                
-                                    <?php
-                                    $produkKtg = mysqli_query($koneksi, "
-    SELECT p.*, k.nm_ktg
-    FROM tb_produk p
-    JOIN tb_ktg k ON p.id_ktg = k.id_ktg
-    WHERE p.id_ktg = '$id_ktg'
-");
-
-                                    while ($p = mysqli_fetch_assoc($produkKtg)):
-                                    ?>
-                                    <div class="product product-2">
-                                        <figure class="product-media">
-                                            <a href="#">
-                                                <img src="admin/produk_img/<?= $p['gambar']; ?>" alt="<?= htmlspecialchars($p['nm_produk']); ?>" 
-                                                class="product-image">
-                                            </a>
-                                        </figure>
-                                        <div class="product-action product-action-transparent">
-                                            <a href="detail_produk.php?id=<?= $p['id_produk']; ?>" class="btn-product btn-cart"><span>Keranjang</span></a>
-                                        </div>
-                                    </figure>
-
-                                    <div class="product-body">
-                                        <div class="product-cat">
-                                            <a href="belanja.php?id_ktg=<?= $p['$id_ktg']; ?>">
-                                                <?php htmlspecialchars($p['$nm_ktg']); ?>
-                                            </a>
-                                        </div>
-                                        <h3 class="product-title"><a href="belanja.php"><?= htmlspecialchars($p['$nm_produk']); ?></a></h3>
-                                        <div class="product-price">Rp. <?=number_format($p['harga'], 0, ',', '.'); ?></div>
-                                    </div>
-                                </div>
-                            <?php endwhile; ?>
-                          </div>
-                    </div>
-                <?php endwhile; ?>
-            </div><!-- End .tab-content -->
-        </div><!-- End .container -->
+   
 
             <div class="intro-slider-container mb-0">
                 <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl" data-owl-options='{"nav": false, "dots": false}'>
@@ -1078,6 +586,151 @@
 
             <div class="pt-6 pb-6" style="background-color: #fff;">
                 <div class="container">
+                     <?php
+    include 'admin/koneksi.php';
+
+    // Ambil daftar kategori
+    $kategoriQuery = "SELECT DISTINCT k.id_ktg, k.nm_ktg
+                    FROM tb_produk p    
+                    JOIN tb_ktg k ON p.id_ktg = k.id_ktg";
+    $kategoriResult = mysqli_query($koneksi, $kategoriQuery);
+    ?>
+
+    <div class="heading heading-center mb-3">
+        <h2 class="title">Produk Tren</h2>
+    <ul class="nav nav-pills justify-content-center role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab" role="tab" aria-controls="trendy-all-tab"></a>
+        </li>
+
+        <?php while ($ktg = mysqli_fetch_assoc($kategoriResult)) : ?>
+            <li class="nav-item">
+                <a class="nav-link" id="trendy-ktg-<?php echo $ktg['id_ktg']; ?>-link" data-toggle="tab" 
+                    href="#trendy-ktg-<?=$ktg['id_ktg']; ?>-tab" role="tab" 
+                    aria-controls="trendy-ktg<?= $ktg['id_ktg']; ?>-tab"
+                    aria-selected="false">
+                <?= htmlspecialchars($ktg['nm_ktg']); ?>
+            </a>
+        </li>
+        <?php endwhile; ?>
+    </ul>
+</div>
+
+<div class="tab-content tab-content-carousel">
+    <!-- Tab: All -->
+    <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
+        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
+        data-owl-options='{
+            "nav": false,
+            "dots": true,
+            "margin": 20,
+            "loop": false,
+            "responsive": {
+                "0": { "items": 2 },
+                "480": { "items": 2 },
+                "768": { "items": 3 },
+                "992": { "items": 4 },
+                "1200": { "items": 4, "nav": true }
+            }
+        }'>
+                    <?php
+                    $allProduk = mysqli_query($koneksi, "
+                    SELECT p.*, k.nm_ktg 
+                    FROM tb_produk p 
+                    JOIN tb_ktg k ON p.id_ktg = k.id_ktg
+        ");
+                        while ($p = mysqli_fetch_assoc($allProduk)) :
+                    ?>
+                        <div class="product product-2">
+                            <figure class="product-media">
+                                <a href="#">
+                                    <img src="admin/produk_img/<?php echo $p['gambar']; ?>" alt="<?php echo htmlspecialchars($p['nm_produk']); ?>"
+                                        class="product-image">
+                                </a>
+                                
+                                <div class="product-action product-action-transparent">
+                                <a href="detail_produk.php?id_produk=<?= $p['id_produk']; ?>" class="btn-product btn-cart"><span>keranjang</span></a>
+                                </div>
+                                </figure>
+
+                                <div class="product-body">
+                                    <div class="product-cat">
+                                        <a href="belanja.php?id_ktg=<?- $p['id_ktg']; ?>">
+                                            <?= htmlspecialchars($p['nm_ktg']); ?>
+                                        </a>
+                                    </div>
+                                <h3 class="product-title"><a href="belanja.php"><?= htmlspecialchars($p['nm_produk']); ?></a></h3>
+                                <div class="product-price">Rp. <?= number_format($p['harga'], 0, ',', '.'); ?></div>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+        
+    </div> <!-- End .tab-content -->
+</div> <!-- End .container -->
+
+            <!-- Tab; per Kategori -->
+            <?php
+            // Ambil ulang kategori karena sudah habis dibaca di atas
+            $kategoriResult2 = mysqli_query($koneksi, $kategoriQuery);
+            while ($ktg = mysqli_fetch_assoc($kategoriResult2)) :
+                $id_ktg = $ktg['id_ktg'];
+            ?>
+            <div class="tab-pane p-0 fade" id="trendy-ktg-<?= $id_ktg; ?>-tab" role="tabpanel" aria-labelledby="trendy-ktg-<?=$id_ktg; ?>-link">
+                <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
+                    data-owl-options='{
+                        "nav": false,
+                        "dots": true,
+                        "margin": 20,
+                        "loop": false,
+                        "responsive": {
+                            "0": {"items": 2},
+                            "480": {"items": 2},
+                            "768": {"items": 3},
+                            "992": {"items": 4},
+                            "1200": {"items": 4, "nav": true}
+                        }
+                    }'>
+                                
+                                    <?php
+                                    $produkKtg = mysqli_query($koneksi, "
+    SELECT p.*, k.nm_ktg
+    FROM tb_produk p
+    JOIN tb_ktg k ON p.id_ktg = k.id_ktg
+    WHERE p.id_ktg = '$id_ktg'
+");
+
+                                    while ($p = mysqli_fetch_assoc($produkKtg)):
+                                    ?>
+                                    <div class="product product-2">
+                                        <figure class="product-media">
+                                            <a href="#">
+                                                <img src="admin/produk_img/<?= $p['gambar']; ?>" alt="<?= htmlspecialchars($p['nm_produk']); ?>" 
+                                                class="product-image">
+                                            </a>
+                                        </figure>
+                                        <div class="product-action product-action-transparent">
+                                            <a href="detail_produk.php?id=<?= $p['id_produk']; ?>" class="btn-product btn-cart"><span>Keranjang</span></a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="belanja.php?id_ktg=<?= $p['$id_ktg']; ?>">
+                                                <?php htmlspecialchars($p['$nm_ktg']); ?>
+                                            </a>
+                                        </div>
+                                        <h3 class="product-title"><a href="belanja.php"><?= htmlspecialchars($p['$nm_produk']); ?></a></h3>
+                                        <div class="product-price">Rp. <?=number_format($p['harga'], 0, ',', '.'); ?></div>
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                          </div>
+                    </div>
+                <?php endwhile; ?>
+            </div><!-- End .tab-content -->
+        </div><!-- End .container -->
                     <div class="banner-set">
                         <div class="row">
                             <div class="col-lg-6">
@@ -1090,6 +743,71 @@
 
                                         <div class="banner-set-products">
                                             <div class="row">
+                                                </div>
+</div>
+<?php
+// Koneksi ke database
+include 'koneksi.php'; // Sesuaikan dengan file koneksi yang kamu gunakan
+
+// Ambil total jumlah pesanan dari tabel tb_pesanan
+$query = "SELECT COUNT(*) AS total_pesanan FROM tb_jual";
+$result = mysqli_query($koneksi, $query);
+$data = mysqli_fetch_assoc($result);
+$totalPesanan = $data['total_pesanan'] ?? 0; // Default ke 0 jika tidak ada pesanan
+?>
+<div class="col-xxl-4 col-md-6">
+    <div class="card info-card sales-card">
+        <div class="card-body">
+            <h5 class="card-title">Pesanan <span>| Semua Waktu</span></h5>
+            <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-basket"></i> <!-- Ikon Keranjang Belanja -->
+			</div>
+			</div>
+			<div class="ps-3">
+   			    <h6><?php echo $totalPesanan; ?></h6>
+			</div>
+		     </div>
+		</div>
+	    </div>
+	</div>
+      <!-- End Order Card -->
+      <?php
+      include 'koneksi.php';
+
+      // Ambil tanggal hari ini
+// Ambil tanggal hari ini
+$tanggalHariIni = date("Y-m-d");
+
+// Query langsung ke tb_jual berdasarkan tanggal hari ini
+$query = "SELECT SUM(total) AS total_revenue FROM tb_jual WHERE DATE(tgl_jual) = '$tanggalHariIni'";
+
+$result = mysqli_query($koneksi, $query);
+$data = mysqli_fetch_assoc($result);
+$totalRevenue = $data['total_revenue'] ?? 0;
+?>
+<!-- Revenew Card -->
+<div class="col-xxl-4 col-md-6">
+    <div class="card info-card revenue-card">
+        <div class="card-body">
+            <h5 class="card-title">Pendapatan <span>| Hari Ini</span></h5>
+            <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+		<i class="bi bi-currency-dollar"></i>
+	      </div>
+              <div class="ps-3">
+   	       <h6>Rp<?php echo number_format($totalRevenue, 0, ',', '.'); ?></h6>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+       </div>
+	<!-- End remove Card -->
+     </div>
+   </section>
+
+</main><!-- End #Main -->
+
                                                 <div class="products">
                                                     <div class="col-6">
                                                         <div class="product product-2 text-center">
